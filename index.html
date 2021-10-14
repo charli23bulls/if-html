@@ -89,7 +89,9 @@
 </table>
 
 <p></p>
-<form action="/" method="get" >My first form
+<form action="/" method="get">
+    <fieldset>
+    <legend>My first form</legend>
     <div><label for="Name">Name</label></div>
     <div><input id="Name" type="text" placeholder="Name" required></div>
     <div><label for="Email">Email</label></div>
@@ -110,14 +112,13 @@
     <textarea value="comment" maxlength="500" placeholder="comment"></textarea>
 <p>What does HTML stand for</p>
     <div>
-        <select name="Your answer" >
+        <select name="Your answer">
             <option value="Meaning id">Meaning id</option>
         </select>
-
     </div>
 <p></p>
     <button type="submit"> Send</button>
+    </fieldset>
 </form>
-
 </body>
 </html>
