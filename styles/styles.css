@@ -1,0 +1,40 @@
+
+.three item {
+margin: 120px 140px;
+}
+* {
+    margin: 0;
+}
+.header {
+  font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+}
+.header::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100px;
+    margin: 10px auto 110px;
+    background-color: #F5BD41;
+}
+*{
+    margin: auto;
+}
+.Block {
+    display: flex;
+    justify-content: space-between;
+}
+.item {
+  font-size: 24px;
+    height: 28px;
+    margin: 55px;
+}
+img {
+    width: 75px;
+    height: 92px;
+    top: 4px;
+    left: 13px;
+    margin: 0;
+}
