@@ -1,100 +1,90 @@
 * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
     font-family: 'Roboto', sans-serif;
 }
-.header {
-  font-weight: 500;
+.offer{
+    padding: 120px 0;
+}
+.img_height{
+    height: 100px;
+}
+.section-title {
+    /*margin: 0 104px*/
+    font-weight: 500;
     font-size: 40px;
     line-height: 47px;
-    margin-top: 120px;
     text-align: center;
     color: #383838;
 }
-.header::after {
-    content: "";
-    display: block;
+.LineOrange {
+    border: none;
     height: 4px;
     width: 100px;
     margin: 20px auto 80px;
     background-color: #F5BD41;
 }
 .container {
-    max-width: 1266px;
-    padding: 120px 16px;
+    max-width: 1264px;
+    padding: 0 16px;
     margin: 0 auto;
+    width: 100%;
 }
 .Block {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 .item {
-    align-items: center;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+    margin-right: 16px;
+
 }
 .img-wrap {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100px;
-    height: 100px;
-}
-.img-wrap img{
-    max-width: 100%;
-}
-.text_icon {
-    margin: 48px;
+    justify-content: space-around;
+    align-items: center;
 }
 .text_icon{
     color: #383838;
     font-size: 24px;
-    text-align: center;
     font-style: normal;
+    margin-top: 48px;
 }
-.containerHotel{
-    width: 1266px;
-    padding: 120px 16px;
-    margin: 0;
-    background-color: #EAF0F9;
+/*2 блок*/
+/*.item:lastchild{
+    margin-right: 0;
+}*/
+.Home{
+    padding: 120px 0;
 }
-.header-h2{
-    text-align: center;
-    color: #383838;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-}
-.Block2 {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-.item1 {
-    max-width: 25%;
-}
-.img-wrap1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.img_card{
     width: 295px;
     height: 295px;
     margin-top: 105px;
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
-.img-wrap1 img{
-    max-width: 100%;
+.Home {
+    background-color: #EAF0F9;
 }
 .text_icon2{
     text-align: left;
-    font-style: normal;
+    margin-top: 24px;
     margin-bottom: 12px;
     color: #3077C6;
     font-size: 24px;
 }
 .text_icon3{
     text-align: left;
-    font-style: normal;
     margin-top: 12px;
     color: #BFBFBF;
     font-size: 24px;
