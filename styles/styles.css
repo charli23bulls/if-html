@@ -11,6 +11,7 @@ body{
 }
 .img_height{
     height: 100px;
+    margin-bottom: 48px;
 }
 .section-title {
     /*margin: 0 104px*/
@@ -36,11 +37,9 @@ body{
 .Block {
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 .item {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin-right: 16px;
 
 }
@@ -65,9 +64,9 @@ body{
 .img_card{
     width: 295px;
     height: 295px;
+    display: block;
     margin-top: 105px;
     position: relative;
-    display: block;
     top: 0;
     left: 0;
     right: 0;
@@ -88,4 +87,16 @@ body{
     margin-top: 12px;
     color: #BFBFBF;
     font-size: 24px;
+}
+.round {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #F3F3F4;
+    position: absolute;
+    right: 0;
+    top: 240px;
+    padding: 10px 16px;
+    left: 98%;
+    z-index: 1;
 }
