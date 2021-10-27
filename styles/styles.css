@@ -14,7 +14,6 @@ body{
     margin-bottom: 48px;
 }
 .section-title {
-    /*margin: 0 104px*/
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
@@ -99,4 +98,41 @@ body{
     padding: 10px 16px;
     left: 98%;
     z-index: 1;
+}
+/*footer*/
+.footer{
+    padding: 120px 0;
+    background-color: #10367C;
+}
+.Container-footer{
+    max-width: 1264px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+.footer-About{
+    width: 33%;
+}
+.footer-Propertytypes{
+    width: 33%;
+}
+.footer-Support{
+    width: 33%;
+}
+.h2-content{
+    color: #ffffff;
+    padding-bottom: 24px;
+    width: 500px;
+    font-size: 20px;
+}
+.footer-content{
+    padding-bottom: 24px;
+    color: #ffffff;
+    width: 400px;
+    font-size: 20px;
+}
+.name-company{
+    margin-top: 134px;
+    color: #ffffff;
 }
