@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/fonts.css">
 </head>
 <body>
-<section class="offer">
-<div class="container">
+<section class="container">
         <h2 class="section-title"> What do we offer</h2>
         <div class="LineOrange"></div>
+    <div class="item-wraper">
     <div class="Block">
         <div class="item">
             <div class="img-wrap img_height">
@@ -39,71 +38,111 @@
                 </div>
         <span class="text_icon">Real quest reviews</span>
         </div>
-</div>
+    </div>
 </div>
 </section>
-</div>
-<section class="Home">
-    <div class="container">
+<section class="container home">
+    <div class="item-wraper">
            <h2 class="section-title">Homes guests loves</h2>
         <div class="Block">
-            <div class="item">
+            <div class="nested-elements">
         <div class="img-wrap img_card">
             <img src="./Img/Hotel%20Leopold.png" alt="Hotel Leopold">
         </div>
-            <div class="text_icon2">Hotel Leopold</div>
-            <div class="text_icon3">Saint Petersburg, Russia</div>
+                <div class="information">
+            <p class="text_icon2">Leopold</p>
+            <p class="text_icon3">Saint Petersburg, Russia</p>
+                </div>
         </div>
-        <div class="item">
+        <div class="nested-elements">
             <div class="img-wrap img_card">
                 <img src="Img/Rectangle%2049.png" alt="Apartment Sunshine">
             </div>
-            <div class="text_icon2">Apartment Sunshine</div>
-            <div class="text_icon3">Santa  Cruz de Tenerife, Spain</div>
+            <div class="information">
+            <p class="text_icon2">Apartment Sunshine</p>
+            <p class="text_icon3">Santa  Cruz de Tenerife, Spain</p>
             </div>
-        <div class="item">
+            </div>
+        <div class="nested-elements">
             <div class="img-wrap img_card">
                 <img src="Img/Villa%20Kunerad.png" alt="Villa Kunerad">
             </div>
-            <div class="text_icon2">Villa Kunerad</div>
-            <div class="text_icon3">Vysokie Tatry, Slowakia</div>
+            <div class="information">
+            <p class="text_icon2">Villa Kunerad</p>
+            <p class="text_icon3">Vysokie Tatry, Slowakia</p>
             </div>
-        <div class="item">
+            </div>
+        <div class="nested-elements">
             <div class="img-wrap img_card">
                 <img src="Img/Hostel%20Friendship.png" alt="Hostel Friendshipe">
             </div>
-            <div class="text_icon2">Hostel Friendship</div>
-            <div class="text_icon3">Berlin, Germany</div>
+            <div class="information">
+            <p class="text_icon2">Hostel Friendship</p>
+            <p class="text_icon3">Berlin, Germany</p>
+            </div>
         </div>
             <div class="round">&#10095</div>
     </div>
     </div>
 </section>
-<footer class="footer">
+<footer class="footer container">
     <div class="Container-footer">
-        <div class="footer-About">
-            <div class="h2-content">About</div>
-            <div class="footer-content">How Triphouse works</div>
-            <div class="footer-content">Careers</div>
-            <div class="footer-content">Privacy</div>
-            <div class="footer-content">Terms</div>
-            <div class="name-company">© 2020 Triphouse, Inc. All rights reserved</div>
-        </div>
-        <div class="footer-Propertytypes">
-            <div class="h2-content">Property-content</div>
-            <div class="footer-content">Guest houses</div>
-            <div class="footer-content">Hotel</div>
-            <div class="footer-content">Apartments</div>
-            <div class="footer-content">Villas</div>
-            <div class="footer-content">Holiday homes</div>
-            <div class="footer-content">Hostels</div>
-        </div>
-        <div class="footer-Support">
-            <div class="h2-content">Support</div>
-            <div class="footer-content">Contact Customer Service</div>
-            <div class="footer-content">FAQ</div>
-        </div>
+        <ul class="footer-About">
+            <li class="h2-content">About</li>
+            <li><a class="footer-content" href="/">How Triphouse works</a></li>
+            <li><a class="footer-content" href="/"> Careers</a></li>
+            <li><a class="footer-content" href="/"> Privacy</a></li>
+            <li><a class="footer-content" href="/">Terms</a></li>
+            <li class="name-company">© 2020 Triphouse, Inc. All rights reserved</li>
+        </ul>
+        <ul class="footer-Propertytypes">
+            <li class="h2-content">Property-content</li>
+            <li><a class="footer-content" href="/">Guest houses</a></li>
+            <li><a class="footer-content" href="/">Hotel</a></li>
+            <li><a class="footer-content" href="/">Apartments</a></li>
+            <li><a class="footer-content" href="/">Villas</a></li>
+            <li><a class="footer-content" href="/">Holiday homes</a></li>
+            <li><a class="footer-content" href="/">Hostels</a></li>
+        </ul>
+        <ul class="footer-Support">
+            <li class="h2-content">Support</li>
+            <li><a class="footer-content" href="/">Contact Customer Service</a></li>
+            <li><a class="footer-content" href="/">FAQ</a></li>
+        </ul>
     </div>
 </footer>
+<header class="Header">
+    <div class="Header-container">
+        <div class="Header-content">
+            <div class="titleTripHouse"> <img src="Img/logo_vector.png" alt="Logo_vector"></div>
+            <div class="stays-and-attraction">
+            <div class="stays"><a href="/">Stays</a></div>
+            <div class="attraction"><a href="/">Attractions</a></div>
+            <div class="night">
+                <img src="./Img/Night.png" alt="Night and day">
+            </div>
+            <div class="account-circle">
+                <img src="./Img/AccountCircle.png" alt="Account-circle">
+            </div>
+            </div>
+        </div>
+        <div class="h1-text">Discover stays <br>to live, work or just relax</div>
+        <div class="set-string">
+            <div class="input-fields">
+                <div><label class="label-block" for="Name"></label></div>
+                <div><input class="input-block" id="Name" type="text" name="username" value="New York" required></div>
+            </div>
+            <div class="parameter">
+                <div class="booking-date text-style">Tue 15 Sept — Sat 19 Sept</div>
+                <div class="number-parameters text-style">2 Adults — 0 Children — 1 Room</div>
+                <div class="button text-button">Search</div>
+            </div>
+        </div>
+                <div class="icon-shop">
+                    <img class="img-googleplay" src="Img/google-play-badge.png" alt="img get it on google play">
+                    <img class="img-appstore" src="Img/appstore.png" alt="img downlands appstore">
+                </div>
+        </div>
+    </div>
+</header>
 </body>
-</html>

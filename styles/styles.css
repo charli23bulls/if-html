@@ -6,12 +6,11 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-.offer{
-    padding: 120px 0;
+.container{
+    padding: 120px 105px;
 }
 .img_height{
     height: 100px;
-    margin-bottom: 48px;
 }
 .section-title {
     font-weight: 500;
@@ -27,24 +26,26 @@ body{
     margin: 20px auto 80px;
     background-color: #F5BD41;
 }
-.container {
+.item-wraper{
     max-width: 1264px;
     padding: 0 16px;
     margin: 0 auto;
-    width: 100%;
 }
 .Block {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
 }
 .item {
     margin-right: 16px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow:1;
 }
 .img-wrap {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .text_icon{
@@ -54,11 +55,8 @@ body{
     margin-top: 48px;
 }
 /*2 блок*/
-/*.item:lastchild{
-    margin-right: 0;
-}*/
-.Home{
-    padding: 120px 0;
+.nested-elements{
+    margin-right: 16px;
 }
 .img_card{
     width: 295px;
@@ -71,9 +69,10 @@ body{
     right: 0;
     z-index: 1;
 }
-.Home {
+.home {
     background-color: #EAF0F9;
 }
+
 .text_icon2{
     text-align: left;
     margin-top: 24px;
@@ -100,8 +99,8 @@ body{
     z-index: 1;
 }
 /*footer*/
-.footer{
-    padding: 120px 0;
+
+.footer {
     background-color: #10367C;
 }
 .Container-footer{
@@ -112,13 +111,13 @@ body{
     align-items: flex-start;
 }
 .footer-About{
-    width: 33%;
+    width: 33.3%;
 }
 .footer-Propertytypes{
-    width: 33%;
+    width: 33.3%;
 }
 .footer-Support{
-    width: 33%;
+    width: 33.3%;
 }
 .h2-content{
     color: #ffffff;
@@ -127,12 +126,158 @@ body{
     font-size: 20px;
 }
 .footer-content{
-    padding-bottom: 24px;
     color: #ffffff;
     width: 400px;
     font-size: 20px;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    padding-bottom: 24px;
+    display: block;
+    color: #ffffff;
+
+}
 .name-company{
     margin-top: 134px;
     color: #ffffff;
+}
+/*header*/
+
+.Header{
+    background: url("../Img/top-section-1.png") center no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 900px;
+    height: 100vh;
+}
+.Header-container{
+    max-width: 1264px;
+    margin: 0 auto;
+    background: rgba(18, 18, 18, .25);
+}
+.Header-content{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 50px 0 200px 0;
+}
+.stays-and-attraction{
+    display: flex;
+    width: 33.3%;
+    align-items: center;
+    justify-content: space-between;
+}
+.stays {
+    padding-left: 48px;
+    padding-right: 24px;
+    font-size: 24px;
+    font-weigh: 400px;
+    height: 28px;
+}
+.stays::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 50px;
+    margin: -16px 3px 0px;
+    background-color: #F5BD41;
+    position: absolute;
+}
+.attraction{
+    padding-right: 48px;
+    font-size: 24px;
+    font-weigh: 400px;
+    height: 28px;
+}
+.night{
+    padding-right: 24px;
+}
+.account-circle{
+    padding-right: 24px;
+}
+.h1-text{
+    width: 542px;
+    height: 118px;
+    font-size:50px;
+    color: #ffffff;
+    margin-bottom: 145px;
+}
+.stays::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 50px;
+    margin: -16px 3px 0px;
+    background-color: #F5BD41;
+    position: absolute;
+}
+.set-string {
+    display: flex;
+    justify-content: flex-start;
+    width: 1224px;
+    min-width: 100%;
+    margin-bottom: 120px;
+}
+
+.input-block{
+    padding: 21px 278px 21px 24px;
+    background-color: #ffffff;
+}
+/*input-fields:hover{
+    top: 10px;
+}
+/*.input-block{
+    display: none;
+}
+
+.label-block{
+    position: absolute;
+}*/
+.parameter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking-date{
+    display: inline-block;
+    padding: 23px 24px;
+    background-color: #ffffff;
+}
+.number-parameters{
+    padding: 23px 29px;
+    background-color: #ffffff;
+    border-radius: 2%;
+
+}
+.button{
+    background: #3077C6;
+    border-radius: 8px;
+    padding: 20px 59px;
+}
+.text-style{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+.text-button{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.icon-shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-appstore{
+    margin-left: 12px;
+}
+.img-googleplay{
+    margin-right: 12px;
 }
