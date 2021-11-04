@@ -107,6 +107,7 @@ body{
     max-width: 1264px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 16px;
     display: flex;
     align-items: flex-start;
 }
@@ -152,9 +153,11 @@ a{
     position: relative;
     min-height: 900px;
     height: 100vh;
+    margin: 0 16px;
 }
 .Header-container{
     max-width: 1264px;
+    padding: 0 16px;
     margin: 0 auto;
     background: rgba(18, 18, 18, .25);
 }
@@ -166,36 +169,58 @@ a{
 }
 .stays-and-attraction{
     display: flex;
-    width: 33.3%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .stays {
-    padding-left: 48px;
     padding-right: 24px;
     font-size: 24px;
     font-weigh: 400px;
     height: 28px;
+    position: relative;
+}
+.stays:hover:after{
+    width: 35%;
+    background: #F5BD41;
+    opacity: 1;
 }
 .stays::after {
     content: "";
-    display: block;
     height: 4px;
-    width: 50px;
-    margin: -16px 3px 0px;
-    background-color: #F5BD41;
+    bottom: -10px;
     position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 30%;
+    width: 50%;
+    background: #F5BD41;
+    opacity: 0;
 }
 .attraction{
-    padding-right: 48px;
+    padding:0 48px 0 0 ;
     font-size: 24px;
     font-weigh: 400px;
     height: 28px;
+    position: relative;
+}
+.attraction:after{
+    content: "";
+    height: 4px;
+    bottom: -10px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 25%;
+    width: 35%;
+    background: #F5BD41;
+    opacity: 0;
+}
+.attraction:hover:after{
+    width: 35%;
+    background: #F5BD41;
+    opacity: 1;
 }
 .night{
-    padding-right: 24px;
-}
-.account-circle{
     padding-right: 24px;
 }
 .h1-text{
@@ -205,58 +230,7 @@ a{
     color: #ffffff;
     margin-bottom: 145px;
 }
-.stays::after{
-    content: "";
-    display: block;
-    height: 4px;
-    width: 50px;
-    margin: -16px 3px 0px;
-    background-color: #F5BD41;
-    position: absolute;
-}
-.set-string {
-    display: flex;
-    justify-content: flex-start;
-    width: 1224px;
-    min-width: 100%;
-    margin-bottom: 120px;
-}
 
-.input-block{
-    padding: 21px 278px 21px 24px;
-    background-color: #ffffff;
-}
-/*input-fields:hover{
-    top: 10px;
-}
-/*.input-block{
-    display: none;
-}
-
-.label-block{
-    position: absolute;
-}*/
-.parameter{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.booking-date{
-    display: inline-block;
-    padding: 23px 24px;
-    background-color: #ffffff;
-}
-.number-parameters{
-    padding: 23px 29px;
-    background-color: #ffffff;
-    border-radius: 2%;
-
-}
-.button{
-    background: #3077C6;
-    border-radius: 8px;
-    padding: 20px 59px;
-}
 .text-style{
     font-style: normal;
     font-weight: normal;
@@ -275,9 +249,61 @@ a{
     justify-content: center;
     align-items: center;
 }
-.img-appstore{
-    margin-left: 12px;
+.set-string {
+    width: 1224px;
+    margin-bottom: 120px;
 }
-.img-googleplay{
+.input-fields{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    border: 3px solid #F3F3F4;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 64px;
+}
+input:focus{
+    border: 3px solid #F5BD41;
+    background: #ffffff;
+    border-radius: 8px;
+    outline: none;
+}
+.input-block{
+    padding: 20px 220px 20px 24px;
+    background-color: #ffffff;
+    border: none;
+}
+.input-fields {
+    position: relative;
+}
+.input-fields label {
+    position: absolute;
+    left: 0;
+}
+.input-fields input:focus + label {
+    top: -100%;
+}
+.booking-date{
+    display: inline-block;
+    padding: 20px 24px;
+    border: none;
+}
+.number-parameters{
+    padding: 20px 46px;
+    background-color: #ffffff;
+    border: none;
+}
+.button{
+    background: #3077C6;
+    border-radius: 8px;
+    padding: 16px 58px;
+    height: 64px;
+    border: none;
+}
+.img-appstore{
+     margin-left: 12px;
+ }
+.img-googleplay {
     margin-right: 12px;
 }
