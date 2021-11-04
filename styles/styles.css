@@ -263,6 +263,31 @@ a{
     border-radius: 8px;
     height: 64px;
 }
+.name-hotel {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.label-block {
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    right: 15px;
+    top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 40px;
+    transition: .3s;
+}
+
+.input-block:focus~.label-block,
+.input-block:not(:focus):valid~.label-block {
+    top: -55px;
+}
+.label-block{
+    color: #ffffff;
+    font-size: 18px;
+}
 input:focus{
     border: 3px solid #F5BD41;
     background: #ffffff;
@@ -270,20 +295,11 @@ input:focus{
     outline: none;
 }
 .input-block{
-    padding: 20px 220px 20px 24px;
+    padding: 20px 268px 20px 24px;
     background-color: #ffffff;
     border: none;
 }
-.input-fields {
-    position: relative;
-}
-.input-fields label {
-    position: absolute;
-    left: 0;
-}
-.input-fields input:focus + label {
-    top: -100%;
-}
+
 .booking-date{
     display: inline-block;
     padding: 20px 24px;

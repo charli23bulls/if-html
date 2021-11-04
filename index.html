@@ -149,12 +149,14 @@
         <div class="h1-text">Discover stays <br>to live, work or just relax</div>
         <div class="set-string">
             <div class="input-fields">
-                <div><label class="label-block" for="Your destination or hotel name"></label></div>
-                <div><input class="input-block text-style" id="Your destination or hotel name" type="text" name="username" value="Your destination or hotel name" required></div>
-                <div><label class="label-booking-date" for="Tue 15 Sept — Sat 19 Sept"></label></div>
-                <div><input class="booking-date text-style" id="Tue 15 Sept — Sat 19 Sept" type="text" value="Tue 15 Sept — Sat 19 Sept" ></div>
+                <div class="name-hotel">
+                    <input type="text" class="input-block" required>
+                    <label class="label-block">Your destination or hotel name</label>
+                </div>
+                <div><label class="label-booking-date"></label></div>
+                <div><input class="booking-date text-style" type="text" name="date" value="Tue 15 Sept — Sat 19 Sept" ></div>
                 <div><label class="label-na,ber-parameters" for="2 Adults — 0 Children — 1 Room"></label></div>
-                <div><input class="number-parameters text-style" type="text" id="2 Adults — 0 Children — 1 Room" value="2 Adults — 0 Children — 1 Room"></div>
+                <div><input class="number-parameters text-style" type="text" id="2 Adults — 0 Children — 1 Room" name="parameters" value="2 Adults — 0 Children — 1 Room"></div>
                 <button class="button text-button" type="submit">Search</button>
             </div>
         </div>
